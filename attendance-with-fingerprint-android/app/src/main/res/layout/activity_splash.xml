@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorPrimary"
+    android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout4">
+
+        <LinearLayout
+            android:id="@+id/tableRowLatitude"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp" >
+
+            <ImageView
+                android:id="@+id/imageButton1"
+                android:layout_width="159dp"
+                android:layout_height="166dp"
+                android:src="@drawable/ic_launcher"
+                android:layout_gravity="center_vertical"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:text="@string/app_name"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="#FFF"
+        android:textStyle="normal|bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" />
+</RelativeLayout>

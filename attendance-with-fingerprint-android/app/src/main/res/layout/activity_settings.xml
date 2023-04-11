@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/titleSettings"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/url_and_key"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_name"
+                android:maxLines="1"
+                android:layout_marginTop="10dp">
+                <requestFocus />
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_abed_putra"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/idNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/your_id_number"
+                android:maxLines="1"
+                android:layout_marginTop="10dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_0985567890442345"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/link"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/url"
+                android:layout_marginTop="10dp">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_http_abedputra_com"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/key"
+                android:maxLines="1"
+                android:inputType="textPassword">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/example_5b4019d2997f6267f58a027df363ee8f"
+                android:layout_marginBottom="50dp"
+                android:textSize="15sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/add_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:background="@color/colorAccent"
+                    android:textColor="@android:color/white"
+                    android:text="@string/save" />
+
+                <Button
+                    android:id="@+id/update_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:background="@color/colorAccent"
+                    android:textColor="@android:color/white"
+                    android:text="@string/update" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginStart="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Or"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginEnd="20dp" />
+
+                    <Button
+                        android:id="@+id/buttonScan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@color/colorAccent"
+                        android:textColor="@android:color/white"
+                        android:text="*Scan QR" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_margin="12dp"
+                android:background="#f9f9f9"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:gravity="bottom|center">
+
+            <TextView
+                android:layout_gravity="center|bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/info_qr_setting"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

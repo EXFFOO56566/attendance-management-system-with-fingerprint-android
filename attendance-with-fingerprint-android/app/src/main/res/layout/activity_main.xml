@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="bottom"
+    android:background="@drawable/background_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorWhite"
+            android:paddingTop="20dp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:text="@string/welcome_to_attendance"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/inbutton"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_people_outline_black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#1E88E5"
+                            android:gravity="top|center"
+                            android:textSize="15sp"
+                            android:text="@string/check_in"/>
+                    </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/outbutton"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border">
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_person_outline_black"
+                            android:contentDescription="@string/check_out" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:textColor="#D81B60"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|center"
+                            android:textSize="15sp"
+                            android:text="@string/check_out"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/settings"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border">
+
+                        <ImageView
+                            android:layout_marginTop="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:src="@drawable/ic_settings_black"
+                            android:contentDescription="@string/settings" />
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|center"
+                            android:textSize="15sp"
+                            android:textColor="#FB8C00"
+                            android:text="@string/settings"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/check"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/border">
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_fingerprint_black"
+                        android:contentDescription="@string/settings" />
+
+                    <TextView
+                        android:textColor="#43A047"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="top|center"
+                        android:textSize="15sp"
+                        android:text="@string/check_attendance"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>
